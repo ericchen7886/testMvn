@@ -1,0 +1,9 @@
+spring: 
+  profiles: 
+    active: uat
+  thymeleaf:  
+    mode: HTML
+    cache: false #關閉緩存
+#用於區別UAR SIT PD環境
+#thymeleaf引入HTML
+

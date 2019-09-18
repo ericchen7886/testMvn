@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    root: info
+    com.spring.demo: debug
+  file: logs/debug.log
+
+spring: 
+  datasource: 
+    driver-class-name: com.mysql.jdbc.Driver
+    #選擇要放入的資料庫名稱book
+    url: jdbc:mysql://localhost:3306/book?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root1234
+  jpa:
+    hibernate: 
+      ddl-auto: update 
+    show-sql: true    
+      #    ddl-auto: create 會建立資料庫,每次會把原來的刪除,並依照mapping創建一個新的
+    
